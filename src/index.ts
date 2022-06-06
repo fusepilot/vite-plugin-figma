@@ -19,8 +19,7 @@ export type PluginConfig = {
   transformOptions?: EsbuildTransformOptions;
 };
 
-export default function figmaPlugin(config: PluginConfig = { entryPath: "src/plugin.ts", manifestPath: "manifest.json" }): PluginOption {
-
+export function figmaPlugin(config: PluginConfig = { entryPath: "src/plugin.ts", manifestPath: "manifest.json" }): PluginOption {
   return {
     name: 'vite-figma-plugin',
     enforce: 'post',
