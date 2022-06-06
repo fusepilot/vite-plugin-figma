@@ -20,7 +20,7 @@
     "dev": "tsup --watch",
     "build": "tsup",
     "release": "npm run build && bumpp --commit --push --tag && npm publish",
-    "prepare": "tsup"
+    "postinstall": "tsup"
   },
   "devDependencies": {
     "@types/node": "^17.0.40",
